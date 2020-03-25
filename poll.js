@@ -151,7 +151,7 @@ var UIController=(function() {
       var question;
       for(var i=0;i<q.choices.length;i++) {
         document.getElementById("v-"+q.id+"-"+q.choices[i].id).setAttribute("style","color:#000000;width:"+Math.round((q.choices[i].vote/q.vote)*100)+"%");
-        document.getElementById("v-"+q.id+"-"+q.choices[i].id).innerHTML=q.choices[i].choiceHead+"----vote:"+q.choices[i].vote;
+        document.getElementById("v-"+q.id+"-"+q.choices[i].id).innerHTML=q.choices[i].choiceHead+"----votes:"+q.choices[i].vote;
       }
     }
   }
