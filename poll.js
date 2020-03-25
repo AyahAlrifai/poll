@@ -140,7 +140,7 @@ var UIController=(function() {
             vote=Math.round(choices[i].vote/question.vote*100);
           }
           //onclick="PollController.vote('+choices[i].id+','+question.id+')"
-          str+='<div id="v-'+question.id+'-'+choices[i].id+'" class="progress-bar bg-info progress-bar-striped" style="width:'+vote+'%;color:#000000">'+choices[i].choiceHead +"....vote:"+choices[i].vote+'</div></div></div><div class="col-xl-1"><i  class="col-sm-right fas fa-vote-yea vote-choice" id="'+question.id+'-'+choices[i].id+'"></i></div><div class="col-xl-1"></div></div>';
+          str+='<div id="v-'+question.id+'-'+choices[i].id+'" class="progress-bar bg-info progress-bar-striped" style="width:'+vote+'%;color:#000000">'+choices[i].choiceHead +"....votes:"+choices[i].vote+'</div></div></div><div class="col-xl-1"><i  class="col-sm-right fas fa-vote-yea vote-choice" id="'+question.id+'-'+choices[i].id+'"></i></div><div class="col-xl-1"></div></div>';
       }
       str+='</div>';
       document.getElementById(DOMstrings.posts).insertAdjacentHTML('beforeend', str );
