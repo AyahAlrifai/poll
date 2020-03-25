@@ -1,0 +1,104 @@
+.poll {
+  background-color: #10BABA;
+  padding-bottom: 30px;
+}
+.add-question {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.poll-question {
+  border-color: #156868;
+  border-width: 3px;
+  border-style: solid;;
+  border-radius: 8px;
+  width: 90%;
+}
+.header1 {
+  font-size: 80px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header2 {
+  font-size: 20px;
+  color: #FDFD20;
+  text-align: center;
+}
+
+.header3 {
+  font-size: 20px;
+  color: #FF0000;
+  text-align: center;
+}
+
+.choices {
+  background-color: #10BABA;
+  color: #FFFFFF;
+}
+.add-choices {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.poll-choices {
+  border-color: #156868;
+  border-width: 3px;
+  border-style: solid;;
+  border-radius: 8px;
+  width: 70%;
+}
+.delete-choice {
+  color: #156868;
+  font-size: 15px;
+}
+.poll-choices1 {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+.inserted-choice {
+  color: #156868;
+}
+
+.post {
+  background-color: #FFFFFF;
+  color:#156868;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: #156868;
+  border-width: 3px;
+  border-style: solid;;
+  border-radius: 8px;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+.question {
+  text-align: center;;
+}
+.progress1 {
+  margin-bottom: 4px;
+  display: inline;
+}
+.vote-choice {
+  color: #156868;
+  font-size: 20px;
+}
+
+
+.progress2 {
+  border-color: #AAAAAA;
+  border-width: 2px;
+  border-style: solid;;
+  border-radius: 3px;
+  font-size: 20px;
+  height: 25px;
+  text-align: center;
+}
+hr {
+  border: 1px solid gray;
+}
+
+.currentChoices {
+  height: 30px;
+  padding-bottom: 0px;
+}
