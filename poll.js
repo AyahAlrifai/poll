@@ -1,9 +1,10 @@
 var PollController =(function() {
-  var question=function(questionHead,choices,id) {
+  var question=function(questionHead,choices,id,date) {
     this.questionHead=questionHead;
     this.choices=choices;
     this.id=id;
     this.vote=0;
+    this.date=date;
   }
 
   var choice=function(choiceHead,id) {
@@ -28,7 +29,7 @@ var PollController =(function() {
         for(var i=0;i<c.length;i++) {
           choices[i]=new choice(c[i],i);
         }
-        var quest=new question(q,choices,id);
+        var quest=new question(q,choices,id,new Date());
         data.questions.push(quest);
         return quest;
       }
@@ -48,7 +49,7 @@ var PollController =(function() {
       choices[2].vote=56;
       choices[3].vote=42;
       choices[4].vote=26;
-      data.questions.push(new question("how old are you?",choices,0));
+      data.questions.push(new question("how old are you?",choices,0,new Date(2020,2,25,12,55,0,0)));
       data.questions[0].vote=6+8+56+42+26;
       return data.questions[0];
     }
@@ -129,8 +130,11 @@ var UIController=(function() {
     },
 
     showQuestion:function(question) {
-      var str,choices,vote,id;
-      str='<div class="post" id="'+question.id+'"><div class="question">'+question.questionHead+'</div><hr>';
+      var str,choices,vote,id,date;
+      console.log(question.date+"");
+      date=(question.date+"").split(" ");
+
+      str='<div class="post" id="'+question.id+'"><div class="question">'+question.questionHead+'</div><div class="date">'+date[1]+" "+date[2]+","+date[3]+"  "+date[4]+'</div><hr>';
       choices=question.choices;
       for(var i=0;i<choices.length;i++) {
         str+='<div class="row"><div class="col-xl-1"></div><div class="col-xl-9"><div class="progress progress2 ">';
