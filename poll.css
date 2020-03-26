@@ -102,3 +102,8 @@ hr {
   height: 30px;
   padding-bottom: 0px;
 }
+.date {
+  font-size: 15px;
+  color: #777777;
+  text-align: center;
+}
